@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
     article.title = params[:article][:title]
     article.content = params[:article][:content]
     article.save
+    flash[:notice] = "Article was successfully created."
     redirect_to article
   end
 
