@@ -26,3 +26,4 @@ Feature: Create articles
     When I fill in "Title" with "Learning Rails 5"
     And I click "Create Article" button
     Then I should see "Content can't be blank"
+    Then I should not see "Title can't be blank"
